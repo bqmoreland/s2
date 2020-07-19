@@ -16,8 +16,6 @@ S2::Preset::Preset(const Options & options, std::istream & contents)
 		while (startsWithQuote && !endsWithQuote)
 		{
 			std::string nextLine;
-			if (!std::getline(contents, nextLine))
-				throw IOError("Underterminated quote");
 			line += "\n";
 			line += nextLine;
 			endsWithQuote = line.back() == '\"';

@@ -33,6 +33,14 @@ S2::Devices::Devices(const Options & options)
 		generators.push_back(Generator(1, "/dev/ttyUSB0"));
 	if(access("/dev/ttyUSB1", F_OK)!=-1)
 		generators.push_back(Generator(2, "/dev/ttyUSB1"));
+	if(access("/dev/ttyUSB2", F_OK)!=-1)
+		generators.push_back(Generator(3, "/dev/ttyUSB2"));
+	if(access("/dev/ttyUSB3", F_OK)!=-1)
+		generators.push_back(Generator(4, "/dev/ttyUSB3"));
+	if(access("/dev/ttyUSB4", F_OK)!=-1)
+		generators.push_back(Generator(5, "/dev/ttyUSB4"));
+	if(access("/dev/ttyUSB5", F_OK)!=-1)
+		generators.push_back(Generator(6, "/dev/ttyUSB5"));
 	if(access("/dev/hidraw0", F_OK)!=-1)
 		pulses.push_back(Pulse(1,"/dev/hidraw0"));
 }

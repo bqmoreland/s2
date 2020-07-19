@@ -18,8 +18,6 @@ namespace S2
 	class Channel
 	{
 	public:
-
-	private:
 		// The current state.
 		// Only update the state if
 		double amplitude, frequency, duty;

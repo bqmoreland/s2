@@ -1,5 +1,8 @@
 # s2 (Document in progress)
 
+Forked from https://github.com/calum74/s2
+This fork tested in BigLinux/Ubuntu 20.04, not work to read preset from spooky2 and tests, but work fine to send parameters from terminal
+
 Cross-platform command line interface for Spooky2.
 
 ## Overview
