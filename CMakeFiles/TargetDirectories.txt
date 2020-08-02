@@ -1,0 +1,5 @@
+/Users/quinnmoreland/GitHub/s2/CMakeFiles/install.dir
+/Users/quinnmoreland/GitHub/s2/CMakeFiles/s2.dir
+/Users/quinnmoreland/GitHub/s2/CMakeFiles/s2core.dir
+/Users/quinnmoreland/GitHub/s2/CMakeFiles/ALL_BUILD.dir
+/Users/quinnmoreland/GitHub/s2/CMakeFiles/ZERO_CHECK.dir

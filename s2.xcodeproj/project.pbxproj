@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		20B512BE92804CD1A0B6109D /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9BE539FBCC74F56A5F98524 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				8B5E4B81A5BB4EAC80E1C1C9 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D965718329A547328836E5B3 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		49FF1400122E48BA9DADDC56 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C3E3AF70FF34E5FBCC87022 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F9E91173304C4822AC1DFA85 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		9DD27F21136643D4B54E5015 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E282A195BD1842DC97BFEA27 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				3D01F1ED9E2443E885AC63E2 /* CMake Rules */,
+			);
+			dependencies = (
+				AD8CDCA7750B44D4A7B31B7D /* PBXTargetDependency */,
+				08EC34B04BB242498334F082 /* PBXTargetDependency */,
+				6AAEB7CB9D014A5C8D66CD7E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0095F6A7862E4358BE0B9ABC /* /Users/quinnmoreland/GitHub/s2/src/S2.h */ = {isa = PBXBuildFile; fileRef = B2ACAE8B78114A0484BFC4EF /* /Users/quinnmoreland/GitHub/s2/src/S2.h */; };
+		020829478C644CCD9F523B23 /* /Users/quinnmoreland/GitHub/s2/src/Database.h */ = {isa = PBXBuildFile; fileRef = F9A90701FC16401D93C76451 /* /Users/quinnmoreland/GitHub/s2/src/Database.h */; };
+		041865DAEFDF44B6B198AAA1 /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.h */ = {isa = PBXBuildFile; fileRef = F52D0CA881FC4D989F58D8AF /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.h */; };
+		15D7EB88682E491CB1CCEC98 /* /Users/quinnmoreland/GitHub/s2/src/Options.h */ = {isa = PBXBuildFile; fileRef = 48060308CEE14B999658CEF0 /* /Users/quinnmoreland/GitHub/s2/src/Options.h */; };
+		1A38E330C33A4BFA9832E020 /* /Users/quinnmoreland/GitHub/s2/src/Devices.cpp */ = {isa = PBXBuildFile; fileRef = 5368B87B6CB145B1B97D7616 /* /Users/quinnmoreland/GitHub/s2/src/Devices.cpp */; };
+		2564A802319B4048A5A01A6E /* /Users/quinnmoreland/GitHub/s2/src/Generator.cpp */ = {isa = PBXBuildFile; fileRef = D907790E5B7242F086E74EB7 /* /Users/quinnmoreland/GitHub/s2/src/Generator.cpp */; };
+		3839D71AB1E14182B58AACF7 /* /Users/quinnmoreland/GitHub/s2/src/Scan.cpp */ = {isa = PBXBuildFile; fileRef = 12AFB5F54A0B430A9CFBA61B /* /Users/quinnmoreland/GitHub/s2/src/Scan.cpp */; };
+		4087E4615539465897C0BB51 /* /Users/quinnmoreland/GitHub/s2/src/Options.cpp */ = {isa = PBXBuildFile; fileRef = 341CE30C223144B88D8914A6 /* /Users/quinnmoreland/GitHub/s2/src/Options.cpp */; };
+		41167C3D940C470696A488BF /* /Users/quinnmoreland/GitHub/s2/src/FindCommand.cpp */ = {isa = PBXBuildFile; fileRef = 4F84588DA7044EAC9DA95583 /* /Users/quinnmoreland/GitHub/s2/src/FindCommand.cpp */; };
+		48E3DEFAF74846278BC17148 /* /Users/quinnmoreland/GitHub/s2/src/Database.cpp */ = {isa = PBXBuildFile; fileRef = 27631006FC744BADBB8950F6 /* /Users/quinnmoreland/GitHub/s2/src/Database.cpp */; };
+		57F4D5AC4E4142CD970468A3 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.cpp */ = {isa = PBXBuildFile; fileRef = 342DB071A7BE4DC2B30F4B76 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.cpp */; };
+		61EEEE575E9A490D8D808CA9 /* /Users/quinnmoreland/GitHub/s2/src/Preset.cpp */ = {isa = PBXBuildFile; fileRef = 6980EDDE7E164034846FB10F /* /Users/quinnmoreland/GitHub/s2/src/Preset.cpp */; };
+		7F6B0F48095E4472AAECA548 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.h */ = {isa = PBXBuildFile; fileRef = 94F1B716047143E2B4DAFD6B /* /Users/quinnmoreland/GitHub/s2/src/Pulse.h */; };
+		81186245E48F41E191EDB6CD /* /Users/quinnmoreland/GitHub/s2/src/Generator.h */ = {isa = PBXBuildFile; fileRef = 0756B3C9755B42D4AF4373A2 /* /Users/quinnmoreland/GitHub/s2/src/Generator.h */; };
+		868D601F166B42F4AF9C8869 /* /Users/quinnmoreland/GitHub/s2/src/Posix.cpp */ = {isa = PBXBuildFile; fileRef = 705F9AFEB45C4F05950E9514 /* /Users/quinnmoreland/GitHub/s2/src/Posix.cpp */; };
+		88A9F2B4709D42C89CA53485 /* /Users/quinnmoreland/GitHub/s2/src/Apple.cpp */ = {isa = PBXBuildFile; fileRef = 1A28832A5C644718B9AB05CF /* /Users/quinnmoreland/GitHub/s2/src/Apple.cpp */; };
+		894895CA49FD4E6DBC23D0FF /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.h */ = {isa = PBXBuildFile; fileRef = C2E0D56851CE4960AA6DB995 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.h */; };
+		94FAD76347104494929166DC /* /Users/quinnmoreland/GitHub/s2/src/Control.cpp */ = {isa = PBXBuildFile; fileRef = 90D5FBC576EE4089BBD75831 /* /Users/quinnmoreland/GitHub/s2/src/Control.cpp */; };
+		9AF8C6A5A87B4D2CAC497781 /* /Users/quinnmoreland/GitHub/s2/src/RunCommand.cpp */ = {isa = PBXBuildFile; fileRef = AB9D8A3F069E4997B43EE2F6 /* /Users/quinnmoreland/GitHub/s2/src/RunCommand.cpp */; };
+		A1D4C10DC10C431796A2C0AF /* /Users/quinnmoreland/GitHub/s2/src/Devices.h */ = {isa = PBXBuildFile; fileRef = 5D994F2B2F5B44208189F5A2 /* /Users/quinnmoreland/GitHub/s2/src/Devices.h */; };
+		B3800A82DB5147CB926ED6D4 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DB700FD9B5554F8D85550276 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */; };
+		B6C3EA45BC79414695D8F958 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.cpp */ = {isa = PBXBuildFile; fileRef = 199C377743C24E4892FD4E76 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.cpp */; };
+		BA73322879CF474D83DF0309 /* /Users/quinnmoreland/GitHub/s2/src/Program.cpp */ = {isa = PBXBuildFile; fileRef = 14E7EA96069A43618EAF5A04 /* /Users/quinnmoreland/GitHub/s2/src/Program.cpp */; };
+		D53E8E71850B474191A73008 /* /Users/quinnmoreland/GitHub/s2/src/Device.h */ = {isa = PBXBuildFile; fileRef = 816646B4E50F414EBA5B2587 /* /Users/quinnmoreland/GitHub/s2/src/Device.h */; };
+		DA65120D90AE45A3AD6FCB59 /* /Users/quinnmoreland/GitHub/s2/cmdline/Main.cpp */ = {isa = PBXBuildFile; fileRef = 81DFA67E327542D0BC00B0A3 /* /Users/quinnmoreland/GitHub/s2/cmdline/Main.cpp */; };
+		DA96400D72724E788AA8C290 /* /Users/quinnmoreland/GitHub/s2/src/Preset.h */ = {isa = PBXBuildFile; fileRef = 47E4B10EAAF44C6992A22BCB /* /Users/quinnmoreland/GitHub/s2/src/Preset.h */; };
+		ED882644DBC64162BF91C08A /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.cpp */ = {isa = PBXBuildFile; fileRef = F0FE16D8733F4BD6A2512A6C /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.cpp */; };
+		F0C85A3663A8435F9C9C4513 /* /Users/quinnmoreland/GitHub/s2/src/SetCommand.cpp */ = {isa = PBXBuildFile; fileRef = F171CD6022034298971E4F8B /* /Users/quinnmoreland/GitHub/s2/src/SetCommand.cpp */; };
+		F8E9A394E3D742479FFB5AF7 /* /Users/quinnmoreland/GitHub/s2/src/Program.h */ = {isa = PBXBuildFile; fileRef = E5EEAE1DB87846A6B46FBB4F /* /Users/quinnmoreland/GitHub/s2/src/Program.h */; };
+		FD34F082C15549C699C6D44B /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4FB1B0C71B814CC6A6B89083 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		11F3E58EF3C54F718AEBE288 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3D2D622A71EF48C097D2CF59 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B77C04364CDD4AE28ED84FB3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		BA8890A2F17B4270AAF08851 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1005C9504913494C8D2FCE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FF1400122E48BA9DADDC56;
+			remoteInfo = ZERO_CHECK;
+		};
+		2DC9F7B8AC354205BD297685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FF1400122E48BA9DADDC56;
+			remoteInfo = ZERO_CHECK;
+		};
+		3204FE1FD8584AD18FCD478F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D12C0DD4D74F2A9E644883;
+			remoteInfo = s2core;
+		};
+		63D28FA423B54397980B82E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D12C0DD4D74F2A9E644883;
+			remoteInfo = s2core;
+		};
+		A560219F9353499A82BA0587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FF1400122E48BA9DADDC56;
+			remoteInfo = ZERO_CHECK;
+		};
+		B4EE812665524C7CBB35B11D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8293F608876D442889AB3560;
+			remoteInfo = s2;
+		};
+		FCEE867D0F9A4CD381FA77AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E94B87DC372847C080F3A555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DD27F21136643D4B54E5015;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0756B3C9755B42D4AF4373A2 /* /Users/quinnmoreland/GitHub/s2/src/Generator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Generator.h; path = src/Generator.h; sourceTree = SOURCE_ROOT; };
+		0956A3774E1E4A7E82B7FBD5 /* s2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = s2; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AFB5F54A0B430A9CFBA61B /* /Users/quinnmoreland/GitHub/s2/src/Scan.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Scan.cpp; path = src/Scan.cpp; sourceTree = SOURCE_ROOT; };
+		14E7EA96069A43618EAF5A04 /* /Users/quinnmoreland/GitHub/s2/src/Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
+		199C377743C24E4892FD4E76 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Waveforms.cpp; path = src/Waveforms.cpp; sourceTree = SOURCE_ROOT; };
+		1A28832A5C644718B9AB05CF /* /Users/quinnmoreland/GitHub/s2/src/Apple.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Apple.cpp; path = src/Apple.cpp; sourceTree = SOURCE_ROOT; };
+		27631006FC744BADBB8950F6 /* /Users/quinnmoreland/GitHub/s2/src/Database.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Database.cpp; path = src/Database.cpp; sourceTree = SOURCE_ROOT; };
+		2B4483BE111E4F1F96C89F89 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		341CE30C223144B88D8914A6 /* /Users/quinnmoreland/GitHub/s2/src/Options.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Options.cpp; path = src/Options.cpp; sourceTree = SOURCE_ROOT; };
+		342DB071A7BE4DC2B30F4B76 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Pulse.cpp; path = src/Pulse.cpp; sourceTree = SOURCE_ROOT; };
+		47E4B10EAAF44C6992A22BCB /* /Users/quinnmoreland/GitHub/s2/src/Preset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Preset.h; path = src/Preset.h; sourceTree = SOURCE_ROOT; };
+		48060308CEE14B999658CEF0 /* /Users/quinnmoreland/GitHub/s2/src/Options.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Options.h; path = src/Options.h; sourceTree = SOURCE_ROOT; };
+		4F84588DA7044EAC9DA95583 /* /Users/quinnmoreland/GitHub/s2/src/FindCommand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FindCommand.cpp; path = src/FindCommand.cpp; sourceTree = SOURCE_ROOT; };
+		4FB1B0C71B814CC6A6B89083 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5368B87B6CB145B1B97D7616 /* /Users/quinnmoreland/GitHub/s2/src/Devices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Devices.cpp; path = src/Devices.cpp; sourceTree = SOURCE_ROOT; };
+		5D994F2B2F5B44208189F5A2 /* /Users/quinnmoreland/GitHub/s2/src/Devices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Devices.h; path = src/Devices.h; sourceTree = SOURCE_ROOT; };
+		6980EDDE7E164034846FB10F /* /Users/quinnmoreland/GitHub/s2/src/Preset.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Preset.cpp; path = src/Preset.cpp; sourceTree = SOURCE_ROOT; };
+		705F9AFEB45C4F05950E9514 /* /Users/quinnmoreland/GitHub/s2/src/Posix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Posix.cpp; path = src/Posix.cpp; sourceTree = SOURCE_ROOT; };
+		718839153B714D43A02D3860 /* s2core */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libs2core.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		816646B4E50F414EBA5B2587 /* /Users/quinnmoreland/GitHub/s2/src/Device.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Device.h; path = src/Device.h; sourceTree = SOURCE_ROOT; };
+		81DFA67E327542D0BC00B0A3 /* /Users/quinnmoreland/GitHub/s2/cmdline/Main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Main.cpp; path = cmdline/Main.cpp; sourceTree = SOURCE_ROOT; };
+		90D5FBC576EE4089BBD75831 /* /Users/quinnmoreland/GitHub/s2/src/Control.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Control.cpp; path = src/Control.cpp; sourceTree = SOURCE_ROOT; };
+		94F1B716047143E2B4DAFD6B /* /Users/quinnmoreland/GitHub/s2/src/Pulse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pulse.h; path = src/Pulse.h; sourceTree = SOURCE_ROOT; };
+		AB9D8A3F069E4997B43EE2F6 /* /Users/quinnmoreland/GitHub/s2/src/RunCommand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RunCommand.cpp; path = src/RunCommand.cpp; sourceTree = SOURCE_ROOT; };
+		B2ACAE8B78114A0484BFC4EF /* /Users/quinnmoreland/GitHub/s2/src/S2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = S2.h; path = src/S2.h; sourceTree = SOURCE_ROOT; };
+		C2E0D56851CE4960AA6DB995 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Waveforms.h; path = src/Waveforms.h; sourceTree = SOURCE_ROOT; };
+		D907790E5B7242F086E74EB7 /* /Users/quinnmoreland/GitHub/s2/src/Generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Generator.cpp; path = src/Generator.cpp; sourceTree = SOURCE_ROOT; };
+		DB700FD9B5554F8D85550276 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E5EEAE1DB87846A6B46FBB4F /* /Users/quinnmoreland/GitHub/s2/src/Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
+		F0FE16D8733F4BD6A2512A6C /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProgressMonitor.cpp; path = src/ProgressMonitor.cpp; sourceTree = SOURCE_ROOT; };
+		F171CD6022034298971E4F8B /* /Users/quinnmoreland/GitHub/s2/src/SetCommand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SetCommand.cpp; path = src/SetCommand.cpp; sourceTree = SOURCE_ROOT; };
+		F52D0CA881FC4D989F58D8AF /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ProgressMonitor.h; path = src/ProgressMonitor.h; sourceTree = SOURCE_ROOT; };
+		F9A90701FC16401D93C76451 /* /Users/quinnmoreland/GitHub/s2/src/Database.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Database.h; path = src/Database.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		065F14B42DA54716905B7307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0956A3774E1E4A7E82B7FBD5 /* s2 */,
+				718839153B714D43A02D3860 /* s2core */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		173D286010DC4254AED194A9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6325B0A22A704F198C51A2A9 /* s2core */ = {
+			isa = PBXGroup;
+			children = (
+				C205432C64474B879942AAD8 /* Source Files */,
+				D92F552748954BA8B522B4C5 /* Header Files */,
+				DB700FD9B5554F8D85550276 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */,
+			);
+			name = s2core;
+			sourceTree = "<group>";
+		};
+		6E3996D86BE640A5AFE2A52D /* s2 */ = {
+			isa = PBXGroup;
+			children = (
+				88B02A62EC3D4D378E1CD04D /* Source Files */,
+				4FB1B0C71B814CC6A6B89083 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */,
+			);
+			name = s2;
+			sourceTree = "<group>";
+		};
+		88B02A62EC3D4D378E1CD04D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				81DFA67E327542D0BC00B0A3 /* /Users/quinnmoreland/GitHub/s2/cmdline/Main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C205432C64474B879942AAD8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A28832A5C644718B9AB05CF /* /Users/quinnmoreland/GitHub/s2/src/Apple.cpp */,
+				90D5FBC576EE4089BBD75831 /* /Users/quinnmoreland/GitHub/s2/src/Control.cpp */,
+				27631006FC744BADBB8950F6 /* /Users/quinnmoreland/GitHub/s2/src/Database.cpp */,
+				5368B87B6CB145B1B97D7616 /* /Users/quinnmoreland/GitHub/s2/src/Devices.cpp */,
+				4F84588DA7044EAC9DA95583 /* /Users/quinnmoreland/GitHub/s2/src/FindCommand.cpp */,
+				D907790E5B7242F086E74EB7 /* /Users/quinnmoreland/GitHub/s2/src/Generator.cpp */,
+				341CE30C223144B88D8914A6 /* /Users/quinnmoreland/GitHub/s2/src/Options.cpp */,
+				705F9AFEB45C4F05950E9514 /* /Users/quinnmoreland/GitHub/s2/src/Posix.cpp */,
+				6980EDDE7E164034846FB10F /* /Users/quinnmoreland/GitHub/s2/src/Preset.cpp */,
+				14E7EA96069A43618EAF5A04 /* /Users/quinnmoreland/GitHub/s2/src/Program.cpp */,
+				F0FE16D8733F4BD6A2512A6C /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.cpp */,
+				342DB071A7BE4DC2B30F4B76 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.cpp */,
+				AB9D8A3F069E4997B43EE2F6 /* /Users/quinnmoreland/GitHub/s2/src/RunCommand.cpp */,
+				12AFB5F54A0B430A9CFBA61B /* /Users/quinnmoreland/GitHub/s2/src/Scan.cpp */,
+				F171CD6022034298971E4F8B /* /Users/quinnmoreland/GitHub/s2/src/SetCommand.cpp */,
+				199C377743C24E4892FD4E76 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D92F552748954BA8B522B4C5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9A90701FC16401D93C76451 /* /Users/quinnmoreland/GitHub/s2/src/Database.h */,
+				816646B4E50F414EBA5B2587 /* /Users/quinnmoreland/GitHub/s2/src/Device.h */,
+				5D994F2B2F5B44208189F5A2 /* /Users/quinnmoreland/GitHub/s2/src/Devices.h */,
+				0756B3C9755B42D4AF4373A2 /* /Users/quinnmoreland/GitHub/s2/src/Generator.h */,
+				48060308CEE14B999658CEF0 /* /Users/quinnmoreland/GitHub/s2/src/Options.h */,
+				47E4B10EAAF44C6992A22BCB /* /Users/quinnmoreland/GitHub/s2/src/Preset.h */,
+				E5EEAE1DB87846A6B46FBB4F /* /Users/quinnmoreland/GitHub/s2/src/Program.h */,
+				F52D0CA881FC4D989F58D8AF /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.h */,
+				94F1B716047143E2B4DAFD6B /* /Users/quinnmoreland/GitHub/s2/src/Pulse.h */,
+				B2ACAE8B78114A0484BFC4EF /* /Users/quinnmoreland/GitHub/s2/src/S2.h */,
+				C2E0D56851CE4960AA6DB995 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FC0ED62EB2764F4295B7DA6C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				173D286010DC4254AED194A9 /* CMake Rules */,
+				2B4483BE111E4F1F96C89F89 /* /Users/quinnmoreland/GitHub/s2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FD43B59D13664990A866356A = {
+			isa = PBXGroup;
+			children = (
+				6E3996D86BE640A5AFE2A52D /* s2 */,
+				6325B0A22A704F198C51A2A9 /* s2core */,
+				FC0ED62EB2764F4295B7DA6C /* ALL_BUILD */,
+				065F14B42DA54716905B7307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8293F608876D442889AB3560 /* s2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E3E212537914B46AC068D35 /* Build configuration list for PBXNativeTarget "s2" */;
+			buildPhases = (
+				4DC38C0C9F99492D8F62C81E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151206A106840C8BC20C4D2 /* PBXTargetDependency */,
+				5160FAABC6C942048D7A44D6 /* PBXTargetDependency */,
+			);
+			name = s2;
+			productName = s2;
+			productReference = 0956A3774E1E4A7E82B7FBD5 /* s2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		83D12C0DD4D74F2A9E644883 /* s2core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E78E83A2988405A84CEAFA1 /* Build configuration list for PBXNativeTarget "s2core" */;
+			buildPhases = (
+				8DCCC98DC2C64F3DB73F40E2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816D2DEDBF3142CE9203C81B /* PBXTargetDependency */,
+			);
+			name = s2core;
+			productName = s2core;
+			productReference = 718839153B714D43A02D3860 /* s2core */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E94B87DC372847C080F3A555 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1160;
+			};
+			buildConfigurationList = CE84B7BCB8624CE5A119D0B0 /* Build configuration list for PBXProject "s2" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				11F3E58EF3C54F718AEBE288 /* Debug */,
+				B77C04364CDD4AE28ED84FB3 /* Release */,
+				3D2D622A71EF48C097D2CF59 /* MinSizeRel */,
+				BA8890A2F17B4270AAF08851 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FD43B59D13664990A866356A;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				9DD27F21136643D4B54E5015 /* ALL_BUILD */,
+				49FF1400122E48BA9DADDC56 /* ZERO_CHECK */,
+				20B512BE92804CD1A0B6109D /* install */,
+				8293F608876D442889AB3560 /* s2 */,
+				83D12C0DD4D74F2A9E644883 /* s2core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B552D2056864A328A4F60E5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3D01F1ED9E2443E885AC63E2 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quinnmoreland/GitHub/s2 -f /Users/quinnmoreland/GitHub/s2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		3D1B776EE8C444D68A09957D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8B5E4B81A5BB4EAC80E1C1C9 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quinnmoreland/GitHub/s2 -f /Users/quinnmoreland/GitHub/s2/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		A1F730C3C6EE4474B1282AE3 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F9E91173304C4822AC1DFA85 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/quinnmoreland/GitHub/s2 -f /Users/quinnmoreland/GitHub/s2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC38C0C9F99492D8F62C81E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA65120D90AE45A3AD6FCB59 /* /Users/quinnmoreland/GitHub/s2/cmdline/Main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCCC98DC2C64F3DB73F40E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A9F2B4709D42C89CA53485 /* /Users/quinnmoreland/GitHub/s2/src/Apple.cpp */,
+				94FAD76347104494929166DC /* /Users/quinnmoreland/GitHub/s2/src/Control.cpp */,
+				48E3DEFAF74846278BC17148 /* /Users/quinnmoreland/GitHub/s2/src/Database.cpp */,
+				1A38E330C33A4BFA9832E020 /* /Users/quinnmoreland/GitHub/s2/src/Devices.cpp */,
+				41167C3D940C470696A488BF /* /Users/quinnmoreland/GitHub/s2/src/FindCommand.cpp */,
+				2564A802319B4048A5A01A6E /* /Users/quinnmoreland/GitHub/s2/src/Generator.cpp */,
+				4087E4615539465897C0BB51 /* /Users/quinnmoreland/GitHub/s2/src/Options.cpp */,
+				868D601F166B42F4AF9C8869 /* /Users/quinnmoreland/GitHub/s2/src/Posix.cpp */,
+				61EEEE575E9A490D8D808CA9 /* /Users/quinnmoreland/GitHub/s2/src/Preset.cpp */,
+				BA73322879CF474D83DF0309 /* /Users/quinnmoreland/GitHub/s2/src/Program.cpp */,
+				ED882644DBC64162BF91C08A /* /Users/quinnmoreland/GitHub/s2/src/ProgressMonitor.cpp */,
+				57F4D5AC4E4142CD970468A3 /* /Users/quinnmoreland/GitHub/s2/src/Pulse.cpp */,
+				9AF8C6A5A87B4D2CAC497781 /* /Users/quinnmoreland/GitHub/s2/src/RunCommand.cpp */,
+				3839D71AB1E14182B58AACF7 /* /Users/quinnmoreland/GitHub/s2/src/Scan.cpp */,
+				F0C85A3663A8435F9C9C4513 /* /Users/quinnmoreland/GitHub/s2/src/SetCommand.cpp */,
+				B6C3EA45BC79414695D8F958 /* /Users/quinnmoreland/GitHub/s2/src/Waveforms.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08EC34B04BB242498334F082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8293F608876D442889AB3560 /* s2 */;
+			targetProxy = B4EE812665524C7CBB35B11D /* PBXContainerItemProxy */;
+		};
+		5160FAABC6C942048D7A44D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D12C0DD4D74F2A9E644883 /* s2core */;
+			targetProxy = 63D28FA423B54397980B82E3 /* PBXContainerItemProxy */;
+		};
+		6AAEB7CB9D014A5C8D66CD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D12C0DD4D74F2A9E644883 /* s2core */;
+			targetProxy = 3204FE1FD8584AD18FCD478F /* PBXContainerItemProxy */;
+		};
+		816D2DEDBF3142CE9203C81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FF1400122E48BA9DADDC56 /* ZERO_CHECK */;
+			targetProxy = 1005C9504913494C8D2FCE0E /* PBXContainerItemProxy */;
+		};
+		AD8CDCA7750B44D4A7B31B7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FF1400122E48BA9DADDC56 /* ZERO_CHECK */;
+			targetProxy = 2DC9F7B8AC354205BD297685 /* PBXContainerItemProxy */;
+		};
+		C151206A106840C8BC20C4D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FF1400122E48BA9DADDC56 /* ZERO_CHECK */;
+			targetProxy = A560219F9353499A82BA0587 /* PBXContainerItemProxy */;
+		};
+		D965718329A547328836E5B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DD27F21136643D4B54E5015 /* ALL_BUILD */;
+			targetProxy = FCEE867D0F9A4CD381FA77AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		009479AFCD584861AFC7FDA8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0D7C187D175E435FB11BE6F9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		210068C0CA604F73BA8336E7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		24C1274589D34C1A83D51EC5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/quinnmoreland/GitHub/s2/build;
+			};
+			name = RelWithDebInfo;
+		};
+		2644F4B3E3FA402799EE15B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		40816917D0264B2FB7818B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4AF4FAD365D24509AD21597B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		54BD8477B64D4B158CDC581E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework IOKit -framework CoreFoundation /Users/quinnmoreland/GitHub/s2/Debug/libs2core.a -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		617B7207431F4F9B82647BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/quinnmoreland/GitHub/s2/build;
+			};
+			name = Debug;
+		};
+		64BC7DE344DA46DDB79CC5E9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework IOKit -framework CoreFoundation /Users/quinnmoreland/GitHub/s2/MinSizeRel/libs2core.a -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		74DB607D068F4840837AAA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		79434C345CAE460EBA43B53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/quinnmoreland/GitHub/s2/build;
+			};
+			name = Release;
+		};
+		8C8A6AE54A354A31992D1E14 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		93ADCE78BF8940A69E3B6190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A7E34E3C87EA49BE99987F18 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C16423FB5F124DBD8F2F8E72 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C31D7BEEA12E45EE92433F0D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework IOKit -framework CoreFoundation /Users/quinnmoreland/GitHub/s2/RelWithDebInfo/libs2core.a -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CA1BE0F7326040BDBB72E43F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CC6722776DB34CD48DB0E645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D3ECFE1587D74FA8B1507DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D916E565EAB64C3D8B287278 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DF72916AD2104B63BA551874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F69556D5837D4D2BA06DDAC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/quinnmoreland/GitHub/s2/build;
+			};
+			name = MinSizeRel;
+		};
+		FBD2D5BC0C2C4D8AA4A2AD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/quinnmoreland/GitHub/s2/src);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework IOKit -framework CoreFoundation /Users/quinnmoreland/GitHub/s2/Release/libs2core.a -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = s2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/quinnmoreland/GitHub/s2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E78E83A2988405A84CEAFA1 /* Build configuration list for PBXNativeTarget "s2core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ECFE1587D74FA8B1507DA0 /* Debug */,
+				CC6722776DB34CD48DB0E645 /* Release */,
+				210068C0CA604F73BA8336E7 /* MinSizeRel */,
+				A7E34E3C87EA49BE99987F18 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C3E3AF70FF34E5FBCC87022 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93ADCE78BF8940A69E3B6190 /* Debug */,
+				40816917D0264B2FB7818B38 /* Release */,
+				D916E565EAB64C3D8B287278 /* MinSizeRel */,
+				8C8A6AE54A354A31992D1E14 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E3E212537914B46AC068D35 /* Build configuration list for PBXNativeTarget "s2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BD8477B64D4B158CDC581E /* Debug */,
+				FBD2D5BC0C2C4D8AA4A2AD0C /* Release */,
+				64BC7DE344DA46DDB79CC5E9 /* MinSizeRel */,
+				C31D7BEEA12E45EE92433F0D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE84B7BCB8624CE5A119D0B0 /* Build configuration list for PBXProject "s2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617B7207431F4F9B82647BB3 /* Debug */,
+				79434C345CAE460EBA43B53D /* Release */,
+				F69556D5837D4D2BA06DDAC2 /* MinSizeRel */,
+				24C1274589D34C1A83D51EC5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E282A195BD1842DC97BFEA27 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF4FAD365D24509AD21597B /* Debug */,
+				2644F4B3E3FA402799EE15B8 /* Release */,
+				009479AFCD584861AFC7FDA8 /* MinSizeRel */,
+				C16423FB5F124DBD8F2F8E72 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9BE539FBCC74F56A5F98524 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF72916AD2104B63BA551874 /* Debug */,
+				74DB607D068F4840837AAA09 /* Release */,
+				CA1BE0F7326040BDBB72E43F /* MinSizeRel */,
+				0D7C187D175E435FB11BE6F9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E94B87DC372847C080F3A555 /* Project object */;
+}
