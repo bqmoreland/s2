@@ -59,7 +59,3 @@ add_executable(s2 cmdline/Main.cpp)
 target_link_libraries(s2 s2core)
 
 install (TARGETS s2 DESTINATION bin)
-
-
-
-target_link_libraries(s2core)
